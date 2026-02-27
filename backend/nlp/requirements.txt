@@ -1,0 +1,8 @@
+speechrecognition
+pyaudio
+spacy
+pandas
+joblib
+python-docx
+groq
+pyttsx3

@@ -1,0 +1,11 @@
+{
+    "revenue_trend": "Revenue forecasted to be decreasing by -0.02%.",
+    "profitability": "Average monthly profit 46339.46 (margin 20.33%).",
+    "sales_volume": "Sales may change by -8.06%.",
+    "customer_growth": "Customer count may change by -3.24%.",
+    "cost_efficiency": "Costs average 62.6% of revenue.",
+    "expense_efficiency": "Expenses average 17.08% of revenue.",
+    "revenue_per_unit": "Average revenue per unit 1840.35.",
+    "risk_indicator": "Profit variability 1937.43.",
+    "model_confidence": "Revenue model R2=0.9988 MAPE=1.7%."
+}

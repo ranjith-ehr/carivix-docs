@@ -1,0 +1,42 @@
+[
+    {
+        "Target": "sales_units",
+        "MAE": 20.12,
+        "RMSE": 27.98,
+        "R2": 0.9813,
+        "MAPE (%)": 7.12,
+        "Mean_y_true": 416.61
+    },
+    {
+        "Target": "revenue",
+        "MAE": 8146.25,
+        "RMSE": 12089.43,
+        "R2": 0.9988,
+        "MAPE (%)": 1.7,
+        "Mean_y_true": 650709.94
+    },
+    {
+        "Target": "new_customers",
+        "MAE": 48.77,
+        "RMSE": 63.29,
+        "R2": 0.9869,
+        "MAPE (%)": 9.23,
+        "Mean_y_true": 929.05
+    },
+    {
+        "Target": "cost",
+        "MAE": 17418.75,
+        "RMSE": 24901.34,
+        "R2": 0.9876,
+        "MAPE (%)": 4.42,
+        "Mean_y_true": 410738.64
+    },
+    {
+        "Target": "expenses",
+        "MAE": 7324.77,
+        "RMSE": 10905.49,
+        "R2": 0.9756,
+        "MAPE (%)": 8.46,
+        "Mean_y_true": 105658.49
+    }
+]

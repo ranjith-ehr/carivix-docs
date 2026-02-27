@@ -1,0 +1,34 @@
+{
+    "Month+1": {
+        "sales_units": 131.18,
+        "revenue": 228271.66,
+        "new_customers": 986.59,
+        "cost": 141300.71,
+        "expenses": 38063.4,
+        "profit": 48907.56
+    },
+    "Month+2": {
+        "sales_units": 124.18,
+        "revenue": 227571.61,
+        "new_customers": 970.74,
+        "cost": 145188.14,
+        "expenses": 38936.52,
+        "profit": 43446.94
+    },
+    "Month+3": {
+        "sales_units": 119.51,
+        "revenue": 227794.97,
+        "new_customers": 954.67,
+        "cost": 141819.58,
+        "expenses": 39480.44,
+        "profit": 46494.94
+    },
+    "Month+4": {
+        "sales_units": 120.61,
+        "revenue": 228216.31,
+        "new_customers": 954.58,
+        "cost": 142473.99,
+        "expenses": 39233.94,
+        "profit": 46508.38
+    }
+}
