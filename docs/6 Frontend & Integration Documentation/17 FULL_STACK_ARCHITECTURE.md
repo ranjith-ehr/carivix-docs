@@ -1,26 +1,57 @@
-# Full Stack Architecture – Mini Carivix
+# Full Stack Architecture
 
-## 1. Purpose
+## 1. Overview
 
-This document explains how the frontend client and backend services are integrated to deliver an end-to-end user experience.  
-The full stack layer acts as the orchestration point between the user interface, backend APIs, authentication services, and data persistence layers.
+The Mini Carivix platform follows a client-server architecture consisting of:
 
----
-
-## 2. Architectural Approach
-
-Mini Carivix follows a **Direct REST + Backend-as-a-Service (BaaS)** architecture.
-
-Key characteristics:
-- No traditional API Gateway or GraphQL layer
-- Frontend communicates directly with backend services
-- Backend internally orchestrates all AI and analytics stages
+- React frontend (web + mobile wrapper)
+- FastAPI backend
+- Supabase for authentication and persistence
 
 ![Full Stack Interaction Diagram](https://i.postimg.cc/gjjQxzmG/Full-Stack-Interaction-Diagram.png)
 
 ---
 
-## 3. Client–Backend Interaction Model
+## 2. Frontend–Backend Contract
+
+### Communication Model
+- HTTP-based REST interaction
+- JSON payloads
+- Synchronous request-response flow
+
+### Endpoints
+
+| Endpoint | Method | Purpose |
+|-----------|--------|----------|
+| /analyze | POST | Analyze text query |
+| /analyze_file | POST | Analyze uploaded file |
+
+---
+
+## 3. Backend Processing Flow
+
+All processing is synchronous.
+
+Intent Prediction  
+→ Entity Extraction  
+→ Pandas Data Analysis  
+→ Groq LLM API  
+→ JSON Response  
+
+If any stage is delayed, the entire request remains pending.
+
+---
+
+## 4. Mobile Integration Layer
+
+- Capacitor wraps the React application.
+- Uses same REST endpoints.
+- Shares same environment configuration.
+- No additional API abstraction layer.
+
+---
+
+## 5. Client–Backend Interaction Model
 
 The frontend establishes two parallel connections:
 
@@ -36,7 +67,7 @@ The frontend establishes two parallel connections:
 
 ---
 
-## 4. Request Orchestration Flow
+## 6. Request Orchestration Flow
 
 1. User submits a query from the client.
 2. The frontend immediately updates the UI (optimistic rendering).
@@ -49,7 +80,7 @@ The frontend establishes two parallel connections:
 
 ---
 
-## 5. State Handling Strategy
+## 7. State Handling Strategy
 
 The frontend manages state locally:
 - No centralized global state store
@@ -60,7 +91,7 @@ This approach reduces complexity and improves responsiveness.
 
 ---
 
-## 6. Error Handling & Resilience
+## 8. Error Handling & Resilience
 
 - Network failures are handled gracefully
 - UI remains responsive during backend delays
@@ -68,7 +99,7 @@ This approach reduces complexity and improves responsiveness.
 
 ---
 
-## 7. Security Responsibilities
+## 9. Security Responsibilities
 
 - Authentication handled at the frontend service layer
 - Authorization enforced via backend and database policies
@@ -76,7 +107,7 @@ This approach reduces complexity and improves responsiveness.
 
 ---
 
-## 8. Related Documentation
+## 10. Related Documentation
 
 - Frontend Overview → `FRONTEND_OVERVIEW.md`
 - Backend Overview → `BACKEND_OVERVIEW.md`

@@ -1,6 +1,6 @@
 from groq import Groq
 
-client = Groq(api_key="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")
+client = Groq(api_key="GROQ_API_KEY")
 
 def generate_response(user_text, intent, entities, context):
     prompt = f"""

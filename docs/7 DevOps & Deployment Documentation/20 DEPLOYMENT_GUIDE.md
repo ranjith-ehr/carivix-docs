@@ -48,7 +48,15 @@ Each component is independently deployed and accessible via HTTPS.
 
 ---
 
-## 5. API Documentation Deployment
+## 5. Mobile Deployment
+
+- Build via Capacitor
+- Package Android/iOS app
+- No backend changes required
+
+---
+
+## 6. API Documentation Deployment
 
 - API documentation is served directly by the backend
 - Accessible via a public URL
@@ -56,7 +64,7 @@ Each component is independently deployed and accessible via HTTPS.
 
 ---
 
-## 6. Environment Management
+## 7. Environment Management
 
 The deployment supports:
 - Development environment
@@ -66,7 +74,7 @@ Each environment uses independent configuration and access controls.
 
 ---
 
-## 7. Operational Considerations
+## 8. Operational Considerations
 
 - Health endpoints support uptime monitoring
 - Logs are retained for debugging and audits
@@ -74,7 +82,7 @@ Each environment uses independent configuration and access controls.
 
 ---
 
-## 8. Related Documentation
+## 9. Related Documentation
 
 - DevOps CI/CD → `DEVOPS_CICD.md`
 - Security Considerations → `SECURITY_CONSIDERATIONS.md`
